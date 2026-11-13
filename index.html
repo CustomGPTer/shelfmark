@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shelfmark: the Android ebook reader that sorts your library</title>
+<meta name="description" content="Shelfmark is an Android ebook reader that finds your books, files them under proper bookshop headings and keeps your place across devices. No ads, no accounts, no tracking.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/shelfmark/">
+<meta name="theme-color" content="#f1f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1411" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shelfmark">
+<meta property="og:title" content="Shelfmark: the Android ebook reader that sorts your library">
+<meta property="og:description" content="Shelfmark is an Android ebook reader that finds your books, files them under proper bookshop headings and keeps your place across devices. No ads, no accounts, no tracking.">
+<meta property="og:url" content="https://customgpter.github.io/shelfmark/">
+<meta property="og:image" content="https://customgpter.github.io/shelfmark/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A shelf of book spines, each carrying a Shelfmark category label">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/literata-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Shelfmark","url":"https://customgpter.github.io/shelfmark/","description":"Shelfmark is an Android ebook reader that finds your books, files them under standard bookshop headings and keeps your place across your devices.","applicationCategory":"ReferenceApplication","applicationSubCategory":"Ebook reader","operatingSystem":"Android 10 or later","softwareVersion":"1.10","inLanguage":"en-GB","image":"https://customgpter.github.io/shelfmark/assets/og.png","featureList":["Reads EPUB, MOBI, AZW3, PDF, TXT, RTF, FB2, CBZ and CBR","Sorts books into bookshop categories automatically","Google Drive folder library","Sync of reading position, bookmarks, highlights and notes","Read aloud","Themes, fonts and page-turn styles"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Shelfmark","url":"https://customgpter.github.io/shelfmark/","inLanguage":"en-GB"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Shelfmark on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. Shelfmark is a personal project and is shared privately by its developer as an Android app file. It needs Android 10 or later."}},{"@type":"Question","name":"Which ebook formats does it open?","acceptedAnswer":{"@type":"Answer","text":"EPUB, MOBI, AZW3, PDF, TXT, RTF, FB2, CBZ and CBR."}},{"@type":"Question","name":"Can it open books bought from Kindle or Kobo?","acceptedAnswer":{"@type":"Answer","text":"Only if they have no copy protection. Books locked with DRM can only be opened by the shop's own app, and Shelfmark does not remove DRM."}},{"@type":"Question","name":"Does Shelfmark upload my books anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Your book files stay where they are. To sort a book, Shelfmark sends only its title and author to a book catalogue. If you turn on sync, your reading position, bookmarks and notes are saved to your own Google Drive, never the books themselves."}},{"@type":"Question","name":"Do I have to sign in to Google?","acceptedAnswer":{"@type":"Answer","text":"No. Reading the books on your phone needs no account at all. Google sign-in is only for showing books from your Drive folders and for syncing between your devices."}},{"@type":"Question","name":"Can Shelfmark see everything in my Google Drive?","acceptedAnswer":{"@type":"Answer","text":"Google's permission screen is worded that way because Google has no permission for a single folder. Shelfmark itself only reads the folders you pick, and reads nothing if you have not picked one."}},{"@type":"Question","name":"Does it work without an internet connection?","acceptedAnswer":{"@type":"Answer","text":"Yes, for reading. Books on your phone open offline. Sorting new books, Drive and sync need a connection."}},{"@type":"Question","name":"What if a book is filed under the wrong heading?","acceptedAnswer":{"@type":"Answer","text":"Press and hold the book, tap its category and choose another. Shelfmark never overwrites a choice you have made."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Shelfmark home"><svg viewBox="0 0 24 30" aria-hidden="true"><rect x="3" y="1" width="18" height="28" rx="2.5" fill="#1e4d3a"/><rect x="3" y="1" width="3" height="28" rx="1.5" fill="#143629"/><rect x="8" y="4.2" width="10" height="1.1" fill="#d9bd76"/><rect x="7.2" y="17" width="11.6" height="8" rx="1" fill="#fffdf5"/><rect x="9.2" y="19.2" width="7.6" height="1.3" fill="#1b2a22"/><rect x="9.2" y="21.8" width="5" height="1.3" fill="#1b2a22"/></svg><span>Shelfmark</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="licences.html">Licences</a></li></ul></nav>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>An ebook reader that files your books for you</h1>
+<p class="lede">Shelfmark is an Android app for the ebooks you already own. It finds them, looks each one up, and shelves it under a proper bookshop heading. Then it gets out of the way so you can read.</p>
+<p class="facts">Android 10 or later. No ads, no accounts, no tracking.</p>
+</div>
+<div class="shelf" role="img" aria-label="Books standing on a shelf, sorted into labelled sections such as Fiction, Classics and Fiction, Mystery and Detective. Each spine carries a small category label."><div class="books" style="grid-column:1"><div class="spine" style="--c:#6e2630;--t:94%;--w:3.0em;--i:0;--tilt:-5deg"><span class="t">Pride and Prejudice</span><span class="m">FIC<span>CLA</span></span></div><div class="spine" style="--c:#20324f;--t:100%;--w:2.7em;--i:1;--tilt:4deg"><span class="t">The Picture of Dorian Gray</span><span class="m">FIC<span>CLA</span></span></div><div class="spine" style="--c:#255c46;--t:88%;--w:3.5em;--i:2;--tilt:-3deg"><span class="t">Middlemarch</span><span class="m">FIC<span>CLA</span></span></div></div><div class="books" style="grid-column:2"><div class="spine" style="--c:#a8762a;--t:91%;--w:2.6em;--i:3;--tilt:5deg"><span class="t">A Study in Scarlet</span><span class="m">FIC<span>MYS</span></span></div><div class="spine" style="--c:#45525c;--t:97%;--w:3.1em;--i:4;--tilt:-4deg"><span class="t">The Moonstone</span><span class="m">FIC<span>MYS</span></span></div></div><div class="books" style="grid-column:3"><div class="spine" style="--c:#1f5a63;--t:86%;--w:2.4em;--i:5;--tilt:3deg"><span class="t">The Time Machine</span><span class="m">FIC<span>SCI</span></span></div><div class="spine" style="--c:#4d2f52;--t:95%;--w:2.9em;--i:6;--tilt:-6deg"><span class="t">Frankenstein</span><span class="m">FIC<span>SCI</span></span></div></div><div class="books last" style="grid-column:4"><div class="spine" style="--c:#5b4127;--t:100%;--w:3.3em;--i:7;--tilt:4deg"><span class="t">On the Origin of Species</span><span class="m">SCI<span>LIF</span></span></div></div><div class="board"></div><div class="bay-name" style="grid-column:1">Fiction / Classics</div><div class="bay-name" style="grid-column:2">Fiction / Mystery &amp; Detective</div><div class="bay-name" style="grid-column:3">Fiction / Science Fiction</div><div class="bay-name last" style="grid-column:4">Science / Life Sciences</div></div>
+</div>
+</div>
+
+<section id="sorting" aria-labelledby="sorting-h">
+<div class="wrap">
+<h2 id="sorting-h">How the sorting works</h2>
+<p class="intro">Most readers show your books as one long list of file names. Shelfmark works out what each book is and where a bookshop would put it.</p>
+<ol class="steps">
+<li><h3>It finds your books</h3><p>On your phone, and in the Google Drive folders you choose. Nothing is moved or renamed.</p></li>
+<li><h3>It looks each one up</h3><p>By title and author, in Open Library first, with Apple's book catalogue as a second opinion. This runs quietly in the background.</p></li>
+<li><h3>It files it</h3><p>Under a standard heading such as <span class="path">Fiction / Thrillers / Espionage</span>. Move a book yourself and your choice sticks.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Made for long reading</h2>
+<p class="intro">Everything you change often is one tap away. Everything else is tidied under a single More options row.</p>
+<dl class="features">
+<div><dt>Nine formats</dt><dd>EPUB, MOBI, AZW3, PDF, TXT, RTF, FB2, and CBZ and CBR comics.</dd></div>
+<div><dt>Your place, on every device</dt><dd>Position, bookmarks, highlights, notes and collections stay in step through your own Google Drive.</dd></div>
+<div><dt>Books from your Drive folders</dt><dd>Pick the folders your ebooks live in. They appear in the library and download when you tap them.</dd></div>
+<div><dt>Read aloud</dt><dd>Listen with the voices on your phone, at your speed, with the screen off.</dd></div>
+<div><dt>Pages your way</dt><dd>Seven reading fonts, light and dark themes, and Slide, Curl, Fade or Scroll page turns.</dd></div>
+<div><dt>Notes in one place</dt><dd>Every highlight, note and bookmark from every book, gathered on one screen.</dd></div>
+<div><dt>Series and authors</dt><dd>Books in a series are shelved together and in order.</dd></div>
+<div><dt>Help when you need it</dt><dd>A reading ruler, a warm night filter, auto-scroll, a quiet daily reading goal and a duplicate finder.</dd></div>
+</dl>
+</div>
+</section>
+
+<section id="google" aria-labelledby="google-h">
+<div class="wrap">
+<h2 id="google-h">What it asks of your Google account</h2>
+<p class="intro">Signing in to Google is optional. If you do, Shelfmark asks for up to two permissions and uses them only for what is listed here.</p>
+<div class="scroll">
+<table>
+<thead><tr><th scope="col">Permission</th><th scope="col">What Shelfmark does with it</th><th scope="col">What it never does</th></tr></thead>
+<tbody>
+<tr><th scope="row">See and download your Google Drive files</th><td>Lists the ebooks inside the Drive folders you choose, and downloads a book when you open it.</td><td>Read anything outside those folders. Change, move, share or delete anything in your Drive.</td></tr>
+<tr><th scope="row">Its own app data in your Google Drive</th><td>Keeps one small hidden file with your reading position, bookmarks, highlights, notes and collections.</td><td>Store your books there, or read any other app's data.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="after-table">The detail is in the <a href="privacy.html#google-user-data">privacy policy</a>.</p>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your reading is your business</h2>
+<ul class="plain">
+<li><h3>No servers</h3><p>Shelfmark has no accounts and no servers of its own. The developer never receives your books or your reading data.</p></li>
+<li><h3>No ads, no tracking</h3><p>There is no advertising, no analytics and no tracking in the app or on this site.</p></li>
+<li><h3>Books stay put</h3><p>Book files are never uploaded. Only a title and author are sent to a catalogue to sort a book.</p></li>
+</ul>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq">
+<div><h3>Is Shelfmark on Google Play?</h3><p>No. Shelfmark is a personal project and is shared privately by its developer as an Android app file. It needs Android 10 or later.</p></div><div><h3>Which ebook formats does it open?</h3><p>EPUB, MOBI, AZW3, PDF, TXT, RTF, FB2, CBZ and CBR.</p></div><div><h3>Can it open books bought from Kindle or Kobo?</h3><p>Only if they have no copy protection. Books locked with DRM can only be opened by the shop's own app, and Shelfmark does not remove DRM.</p></div><div><h3>Does Shelfmark upload my books anywhere?</h3><p>No. Your book files stay where they are. To sort a book, Shelfmark sends only its title and author to a book catalogue. If you turn on sync, your reading position, bookmarks and notes are saved to your own Google Drive, never the books themselves.</p></div><div><h3>Do I have to sign in to Google?</h3><p>No. Reading the books on your phone needs no account at all. Google sign-in is only for showing books from your Drive folders and for syncing between your devices.</p></div><div><h3>Can Shelfmark see everything in my Google Drive?</h3><p>Google's permission screen is worded that way because Google has no permission for a single folder. Shelfmark itself only reads the folders you pick, and reads nothing if you have not picked one.</p></div><div><h3>Does it work without an internet connection?</h3><p>Yes, for reading. Books on your phone open offline. Sorting new books, Drive and sync need a connection.</p></div><div><h3>What if a book is filed under the wrong heading?</h3><p>Press and hold the book, tap its category and choose another. Shelfmark never overwrites a choice you have made.</p></div>
+</div>
+</div>
+</section>
+
+<section id="get" aria-labelledby="get-h">
+<div class="wrap"><div class="measure">
+<h2 id="get-h">Getting Shelfmark</h2>
+<p>Shelfmark is a personal project. It is shared privately by its developer and is not on Google Play. It runs on phones and tablets with Android 10 or later.</p>
+<p>For a question, a problem, or anything about your data, <a href="https://github.com/CustomGPTer/shelfmark/issues">open an issue on GitHub</a>.</p>
+</div></div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<p>&copy; 2026 Jonathan Jackson. Shelfmark is an independent app.</p>
+<p>This site uses no cookies and no tracking. It is set in Literata and Atkinson Hyperlegible, two of the typefaces the app ships with.</p>
+</div>
+<nav aria-label="Footer"><ul>
+<li><a href="./">Home</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+<li><a href="terms.html">Terms of use</a></li>
+<li><a href="licences.html">Licences</a></li>
+<li><a href="https://github.com/CustomGPTer/shelfmark/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
