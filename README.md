@@ -5,9 +5,12 @@ Shelfmark is an ebook reader for Android that finds your books, files them under
 This repository holds the app's public website:
 
 - [Home page](https://customgpter.github.io/shelfmark/)
+- [Release notes](https://customgpter.github.io/shelfmark/releases.html)
 - [Privacy policy](https://customgpter.github.io/shelfmark/privacy.html)
 - [Terms of use](https://customgpter.github.io/shelfmark/terms.html)
 - [Licences and credits](https://customgpter.github.io/shelfmark/licences.html)
+
+The latest version of the app is on the [Releases page](https://github.com/CustomGPTer/shelfmark/releases/latest).
 
 The site is plain HTML and CSS with no scripts, cookies or tracking, and is served by GitHub Pages from the `main` branch.
 
