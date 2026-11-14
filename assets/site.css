@@ -124,6 +124,35 @@ tr:last-child>*{border-bottom:1px solid var(--rule)}
 .get{margin:1.6rem 0 .9rem}
 .get .facts{margin-top:.9rem}
 .facts + .facts{margin-top:.5rem}
+.lede + .lede{margin-top:-.6rem}
+.more{margin:1.6rem 0 0;font:700 1rem/1.5 var(--sans)}
+.cmp{min-width:46rem;margin:1.4rem 0 1rem}
+.cmp th,.cmp td{padding:.8rem .9rem}
+.cmp thead th{color:var(--ink);font-weight:700;vertical-align:bottom;padding-top:.8rem}
+.cmp small{display:block;font-weight:400;font-size:.82rem;line-height:1.35;color:var(--soft)}
+.cmp tbody th{min-width:13rem;padding-left:0}
+.cmp thead th:first-child{padding-left:0}
+.cmp .ours{background:var(--sheet);box-shadow:inset 1px 0 var(--rule),inset -1px 0 var(--rule)}
+.yes{color:var(--green);font-weight:700}
+.pay{color:var(--brass);font-weight:700}
+.na{color:var(--soft)}
+.shops td{font-weight:400;min-width:9.5rem}
+.cmp .app{display:none}
+.key{font:400 .95rem/1.55 var(--sans);color:var(--soft);margin:0 0 .6rem}
+@media (max-width:46rem){
+  .cmp{min-width:0}
+  .cmp thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .cmp tbody,.cmp tr,.cmp th,.cmp td{display:block}
+  .cmp tr{padding:1rem 0;border-top:1px solid var(--rule)}
+  .cmp th,.cmp td{border:0;padding:0}
+  .cmp tbody th{min-width:0;margin-bottom:.55rem}
+  .cmp td{display:grid;grid-template-columns:8.5rem 1fr;gap:.75rem;padding:.22rem 0}
+  .cmp .app{display:block;font-weight:400;color:var(--soft)}
+  .cmp .ours{background:none;box-shadow:none}
+  .cmp .ours .app{color:var(--ink);font-weight:700}
+  .shops td{grid-template-columns:1fr;gap:0;padding:.35rem 0;min-width:0}
+  .shops .app{font-weight:700;color:var(--ink)}
+}
 .sum{font-size:.95rem;overflow-wrap:anywhere}
 .release{border-top:1px solid var(--rule);margin-top:2.4rem;padding-top:1.9rem;scroll-margin-top:1rem}
 .doc .release h2{margin-top:0}

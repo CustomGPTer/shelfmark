@@ -1,10 +1,11 @@
 # Shelfmark
 
-Shelfmark is an ebook reader for Android that finds your books, files them under standard bookshop headings and keeps your place across your devices.
+Shelfmark is a free ebook reader for Android that finds your books, files them under standard bookshop headings and keeps your place across your devices. It has no paid version: sync, read aloud and other features that some readers sell as upgrades are included.
 
 This repository holds the app's public website:
 
 - [Home page](https://customgpter.github.io/shelfmark/)
+- [How it compares with other readers](https://customgpter.github.io/shelfmark/compare.html)
 - [Release notes](https://customgpter.github.io/shelfmark/releases.html)
 - [Privacy policy](https://customgpter.github.io/shelfmark/privacy.html)
 - [Terms of use](https://customgpter.github.io/shelfmark/terms.html)
