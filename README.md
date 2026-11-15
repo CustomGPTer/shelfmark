@@ -7,6 +7,7 @@ This repository holds the app's public website:
 - [Home page](https://customgpter.github.io/shelfmark/)
 - [How it compares with other readers](https://customgpter.github.io/shelfmark/compare.html)
 - [Release notes](https://customgpter.github.io/shelfmark/releases.html)
+- [More apps from the same developer](https://customgpter.github.io/shelfmark/more-apps.html)
 - [Privacy policy](https://customgpter.github.io/shelfmark/privacy.html)
 - [Terms of use](https://customgpter.github.io/shelfmark/terms.html)
 - [Licences and credits](https://customgpter.github.io/shelfmark/licences.html)

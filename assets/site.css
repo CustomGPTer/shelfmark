@@ -139,7 +139,7 @@ tr:last-child>*{border-bottom:1px solid var(--rule)}
 .shops td{font-weight:400;min-width:9.5rem}
 .cmp .app{display:none}
 .key{font:400 .95rem/1.55 var(--sans);color:var(--soft);margin:0 0 .6rem}
-@media (max-width:46rem){
+@media (max-width:54rem){
   .cmp{min-width:0}
   .cmp thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
   .cmp tbody,.cmp tr,.cmp th,.cmp td{display:block}
@@ -169,3 +169,41 @@ tr:last-child>*{border-bottom:1px solid var(--rule)}
 .colophon ul{display:flex;flex-wrap:wrap;gap:.3rem 1.5rem;list-style:none;margin:0;padding:0}
 .colophon p{margin:0}
 .after-table{margin-top:1.5rem}
+
+/* ---------- more apps, and fixes for phones */
+.masthead nav ul{align-items:center}
+.masthead nav a.more-apps{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--rule);border-radius:3px;background:var(--sheet);padding:.3rem .7rem .3rem .6rem}
+.masthead nav a.more-apps svg{width:1em;height:1em;flex:none;fill:none;stroke:var(--green);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.masthead nav a.more-apps:hover,.masthead nav a.more-apps[aria-current="page"]{text-decoration:none;border-color:var(--green)}
+/* On a phone the legal pages are reached from the foot of the page, which keeps the header to one line. */
+@media (max-width:40rem){.masthead nav ul{gap:.25rem .75rem;font-size:.95rem}.masthead nav a.more-apps{padding:.28rem .6rem .28rem .5rem;gap:.38rem}.masthead nav li:nth-last-child(-n+3){display:none}}
+@media (max-width:23.5rem){.masthead nav ul{gap:.25rem .65rem}.masthead nav a.more-apps svg{display:none}.masthead nav a.more-apps{padding-inline:.6rem}}
+.doc .mapps{list-style:none;margin:2.4rem 0 0;padding:0;display:grid;gap:1.4rem}
+@media (min-width:50rem){.doc .mapps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.doc .mapp{margin:0;display:flex;flex-direction:column;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.mapp-cover{position:relative;height:6.5rem;background:linear-gradient(135deg,var(--b),var(--b2));overflow:hidden}
+.mapp-cover svg{position:absolute;right:-1.2rem;top:-1.6rem;width:11rem;height:11rem;max-width:none;opacity:.22}
+.mapp-body{display:flex;flex-direction:column;flex:1;padding:0 1.5rem 1.4rem}
+.mapp-icon{width:4.25rem;height:4.25rem;border-radius:1rem;margin-top:-2.1rem;position:relative;box-shadow:0 0 0 4px var(--sheet)}
+.doc .mapp h2{font-size:1.6rem;margin:.9rem 0 .1rem}
+.mapp-kind{font:400 1rem/1.4 var(--sans);color:var(--soft);margin:0 0 .8rem}
+.mapp-say{color:var(--soft);margin:0 0 1.2rem}
+.mapp-go{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem 1.4rem;margin:auto 0 0;font:700 1rem/1.4 var(--sans)}
+.mapp-go .button{font-size:1rem;padding:.75rem 1.15rem}
+.mapp-needs{font:400 .92rem/1.5 var(--sans);color:var(--soft);margin:.9rem 0 0}
+.doc .mapps + .measure h2{margin-top:3.2rem}
+.doc a{overflow-wrap:anywhere}
+.colophon li a{display:inline-block;padding-block:.2rem}
+/* On a phone a table becomes a stack: the row's name, then its cells side by side. */
+@media (max-width:40rem){
+  table:not(.cmp),table:not(.cmp) thead,table:not(.cmp) tbody{display:block}
+  table:not(.cmp) tr{display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;padding:.9rem 0;border-top:1px solid var(--rule)}
+  table:not(.cmp) thead tr{border-top:0;padding-top:0}
+  table:not(.cmp) tbody tr:last-child{border-bottom:1px solid var(--rule)}
+  table:not(.cmp) th,table:not(.cmp) td{display:block;border:0;padding:0;flex:1 1 0;min-width:0;overflow-wrap:break-word}
+  table:not(.cmp) tr>:first-child{flex:0 0 100%;min-width:0}
+}
+/* the shelf on a narrow phone: room for every title, and nothing wider than the screen */
+@media (max-width:40rem){.shelf{--h:15.5rem}.spine .t{font-size:.7rem}}
+@media (max-width:22.5rem){.shelf{font-size:.7rem;column-gap:.6em}.board{margin-inline:-.3rem}}
+/* ---------- end of more apps, and fixes for phones */
